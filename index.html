@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./styles/layout.css">
+    <title>Email Client</title>
+</head>
+<body>
+
+    <header>
+        Outlook Mail
+    </header>
+
+    <div class="container">
+        <div class="navigation-block">
+            <div class="search-bar"></div>
+            <div class="folders">
+                <h3>Folders</h3>
+                <ul id="folder-holder"></ul>
+            </div>
+        </div>
+        <div class="email-conatiner">
+            <div class="mail-display">
+                <!--<div>-->
+                    <!--<span data-event="modifiers-filter, all">All</span>-->
+                    <!--<span data-event="modifiers-filter, flagged">Flagged</span>-->
+                    <!--<span data-event="modifiers-filter, unflagged">Un-Flagged</span>-->
+                <!--</div>-->
+                <div class="list-view" id="mail-list-holder"></div>
+                <div class="detail-view">
+                    <div class="default-detail-view">Select an item to read</div>
+                    <div class="mail-view" id="email-detail-holder"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="scripts/data-populator.js"></script>
+<script src="scripts/data-modifiers.js"></script>
+<script src="scripts/default-view.js"></script>
+<script src="scripts/email-view.js"></script>
+<script src="scripts/dom-events.js"></script>
+<script src="scripts/route-handlers.js"></script>
+
+</html>

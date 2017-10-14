@@ -1,0 +1,197 @@
+/*Reset CSS*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header{
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background: black;
+    padding: 0 20px;
+}
+
+.navigation-block{
+    width: 20%;
+    float: left;
+    background: #eee;
+}
+
+.folders{
+    padding: 10%;
+}
+
+.folders h3{
+    font-size: 14px;
+}
+
+.folders ul {
+    padding: 10px;
+    font-size: 13px;
+}
+.folders ul li{
+    margin: 10px 0;
+}
+
+.folders ul li a{
+    text-decoration: none;
+    color: #113cea;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.folders ul li a.selected{
+    background:  #1195ea;
+    color: white;
+}
+
+.email-conatiner{
+    width: 69%;
+    float: left;
+}
+
+.list-view{
+    width: 30%;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.list-view a{
+    text-decoration: none;
+}
+
+.detail-view{
+    width: 70%;
+    float: left;
+}
+
+.trim {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-view{
+    padding: 5px 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    border-left: 5px solid transparent;
+ }
+
+.item-view.current-active{
+    border-left: 5px solid blue;
+}
+
+.item-view.unread-mail{
+    background: #e3f5ff;
+}
+
+.item-title{
+    font-size: 13px;
+    padding: 2px;
+    margin-bottom: 2px;
+    color: #525151;
+}
+
+.item-subject{
+    color: #1173de;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+.item-peek{
+    padding: 2px;
+    margin-bottom: 2px;
+    color: #909090;
+}
+
+.default-detail-view{
+    color: #1173de;
+    font-size: 14px;
+    text-align: center;
+    margin: 100px;
+}
+
+.mail-view{
+    padding: 10px;
+}
+
+.mail-view-subject{
+    color: #1173de;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.mail-view-content{
+    color: #909090;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.email-actions{
+    text-align: right;
+    font-size: 12px;
+    margin: 20px;
+    color: #de0707;
+}
+
+.email-actions span{
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
